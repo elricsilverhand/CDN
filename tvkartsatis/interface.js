@@ -2779,6 +2779,12 @@ function loadmore()
  success: function (response) {
   var content = document.getElementById("productslist");
   content.innerHTML = content.innerHTML+response;
+  var pckry = new Packery( '.js_packery', {
+    itemSelector: '.pr_grid_item',
+    gutter: 0,
+    percentPosition:true,
+    originLeft:true
+  });
 
   document.getElementById("result_no").value = Number(val)+12;
  }
@@ -2800,6 +2806,13 @@ function loadmorekategori(kategorid)
  success: function (response) {
   var content = document.getElementById("productslist");
   content.innerHTML = content.innerHTML+response;
+  var pckry = new Packery( '.js_packery', {
+    itemSelector: '.pr_grid_item',
+    gutter: 0,
+    percentPosition:true,
+    originLeft:true
+  });
+
 
   document.getElementById("result_no").value = Number(val)+12;
  }
@@ -2821,6 +2834,12 @@ function loadmoremarka(markaid)
  success: function (response) {
   var content = document.getElementById("productslist");
   content.innerHTML = content.innerHTML+response;
+  var pckry = new Packery( '.js_packery', {
+    itemSelector: '.pr_grid_item',
+    gutter: 0,
+    percentPosition:true,
+    originLeft:true
+  });
 
   document.getElementById("result_no").value = Number(val)+12;
  }
